@@ -15,9 +15,9 @@ from sklearn.utils import shuffle
 from sklearn.tree import DecisionTreeClassifier
 
 # # Download NLTK resources
-# nltk.download('punkt')
-# nltk.download('stopwords')
-# nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 
 # Text Preprocessing Function
