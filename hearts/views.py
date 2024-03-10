@@ -14,19 +14,6 @@ from django.conf import settings
 from sklearn.utils import shuffle
 from sklearn.tree import DecisionTreeClassifier
 
-nltk_data_path = os.path.join(settings.BASE_DIR, 'nltk_data')
-
-nltk.data.path.append(nltk_data_path)
-
-try:
-    nltk.data.find('tokenizers/punkt')
-    nltk.data.find('corpora/stopwords')
-    nltk.data.find('corpora/wordnet')
-except LookupError:
-    nltk.download('punkt', download_dir=nltk_data_path)
-    nltk.download('stopwords', download_dir=nltk_data_path)
-    nltk.download('wordnet', download_dir=nltk_data_path)
-
 
 # Text Preprocessing Function
 def clean_text(sent):
