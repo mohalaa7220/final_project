@@ -18,6 +18,10 @@ nltk_data_path = os.path.join(settings.BASE_DIR, 'nltk_data')
 
 nltk.data.path.append(nltk_data_path)
 
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
