@@ -15,6 +15,11 @@ from sklearn.utils import shuffle
 from sklearn.tree import DecisionTreeClassifier
 
 
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+
+
 # Text Preprocessing Function
 def clean_text(sent):
     stop_words = set(stopwords.words('english'))
